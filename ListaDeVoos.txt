@@ -1,0 +1,32 @@
+Rio de Janeiro X São Paulo;50
+Belo Horizonte X São Paulo;30
+Brasília X São Paulo;120
+Porto Alegre X São Paulo;240
+Manaus X São Paulo;300
+Recife X São Paulo;120
+Salvador X São Paulo;120
+Fortaleza X São Paulo;120
+Curitiba X São Paulo;120
+Natal X São Paulo;150
+Belém X São Paulo;150
+Florianópolis X São Paulo;120
+João Pessoa X São Paulo;120
+Maceió X São Paulo;120
+Aracaju X São Paulo;120
+Vitória X São Paulo;120
+Rio de Janeiro X Belo Horizonte;30
+Belo Horizonte X Rio de Janeiro;30
+Brasília X Belo Horizonte;120
+Porto Alegre X Belo Horizonte;240
+Manaus X Belo Horizonte;300
+Recife X Belo Horizonte;120
+Salvador X Belo Horizonte;120
+Fortaleza X Belo Horizonte;120
+Curitiba X Belo Horizonte;120
+Natal X Belo Horizonte;150
+Belém X Belo Horizonte;150
+Florianópolis X Belo Horizonte;120
+João Pessoa X Belo Horizonte;120
+Maceió X Belo Horizonte;120
+Aracaju X Belo Horizonte;120
+Vitória X Belo Horizonte;120

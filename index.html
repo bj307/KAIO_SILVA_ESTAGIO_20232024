@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <link rel="shortcut icon"
+    href="https://scontent.fgyn1-1.fna.fbcdn.net/v/t39.30808-6/305266476_767033014546961_3574988941913974316_n.png?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=rPjFkzqJwwcAX9seB42&_nc_oc=AQm7MNBPq3Trrb5qIPDJcCy46BDuRPIl3rq4hqRQ4ofnB7Ut49PSbhCZ4e14NX3aufs&_nc_pt=1&_nc_ht=scontent.fgyn1-1.fna&oh=00_AfBzZG052npaOZCPYEnqT-kH-g7ayrlEPfLM3vHZJHXe1Q&oe=652CA998"
+    type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script src="script.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+    body {
+      background: #4a515b;
+    }
+
+    .relative h4 {
+      font-family: 'Titillium Web', sans-serif;
+      color: white;
+    }
+
+    .relative {
+      justify-content: center !important;
+    }
+
+    section {
+      margin-top: 25px;
+    }
+
+    .cBot {
+      background-color: #1f2937;
+      min-height: 100px;
+      border-radius: 10px;
+    }
+
+    .cBot h3 {
+      color: white;
+      margin-left: 45px;
+      padding-top: 8px;
+      font-family: 'Titillium Web', sans-serif;
+    }
+
+    .bloco {
+      width: 80px;
+      height: 60px;
+      background-color: #ededed;
+      border-radius: 10px;
+      margin-bottom: -40px;
+      margin-left: -40px;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      width: 80% !important;
+    }
+
+    .list-group {
+      padding-top: 20px;
+      padding-bottom: 8px;
+      border-radius: 6px;
+    }
+
+    li {
+      color: #ffffff !important;
+      font-size: 14px;
+    }
+
+    svg,
+    img {
+      width: 44px;
+      height: 44px;
+      flex-shrink: 0;
+    }
+
+    .miniCard input {
+      margin-bottom: 10px;
+    }
+
+    .miniCard {
+      margin-top: 20px;
+    }
+
+    .miniCard button {
+      width: -webkit-fill-available;
+      border-color: #1f2937 !important;
+    }
+
+    .miniCard button:active,
+    button:hover,
+    button:focus {
+      background-color: #1f2937 !important;
+    }
+
+    button svg {
+      width: 20px;
+      height: 20px;
+
+    }
+
+    .cBot button {
+      display: flex;
+      float: right;
+      border-color: #fff !important;
+    }
+  </style>
+  <title>Geogin Estágio</title>
+</head>
+
+<body>
+  <nav class="bg-gray-800">
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div class="relative flex h-16 items-center justify-between">
+        <h4>Trip Challenger</h4>
+
+      </div>
+
+    </div>
+    </div>
+    </div>
+  </nav>
+
+  <section class="arquivos">
+    <div class="container">
+
+
+
+      <div class="miniCard">
+        <input class="form-control form-control-sm" type="file" id="arquivoVoo" accept=".txt">
+        <button type="button" class="btn btn-primary btn-sm" onclick="lerTxtVoos()">Ler voôs</button>
+      </div>
+
+      <div class="miniCard">
+        <input class="form-control form-control-sm" type="file" id="arquivoAviao" accept=".txt">
+        <button type="button" class="btn btn-primary btn-sm" onclick="lerTxtAvioes()">Ler
+          Aviões</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="linhas">
+    <div class="cardContainer">
+      <div class="container">
+        <div class="bloco">
+          <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none">
+            <path
+              d="M31.376 49.1729C31.5806 49.0073 31.7145 48.77 31.7506 48.5093C31.7867 48.2486 31.7223 47.9839 31.5704 47.7689C31.4886 47.6521 31.3844 47.5527 31.2639 47.4763C31.1434 47.4 31.009 47.3483 30.8684 47.3242C30.7278 47.3001 30.5839 47.3041 30.4449 47.3359C30.3058 47.3678 30.1745 47.4268 30.0584 47.5097C29.3617 47.9926 28.6407 48.4396 27.8984 48.8489V38.7617H29.0432C29.1853 38.7769 29.329 38.7619 29.4649 38.7178C29.6009 38.6736 29.7259 38.6013 29.832 38.5054C29.938 38.4096 30.0226 38.2925 30.0802 38.1617C30.1378 38.0309 30.1672 37.8894 30.1664 37.7465C30.1752 37.6046 30.1558 37.4624 30.1095 37.328C30.0632 37.1936 29.9908 37.0697 29.8965 36.9633C29.8022 36.857 29.6878 36.7703 29.5599 36.7082C29.432 36.6462 29.2931 36.61 29.1512 36.6017H27.8552V27.9617H40.8152C40.8152 28.2641 40.8152 28.5665 40.8152 28.8473C40.8034 28.9892 40.8198 29.1321 40.8634 29.2677C40.907 29.4032 40.977 29.5288 41.0693 29.6372C41.1617 29.7456 41.2746 29.8347 41.4015 29.8993C41.5284 29.9639 41.6668 30.0028 41.8088 30.0137C41.9513 30.0286 42.0953 30.0143 42.2321 29.9719C42.369 29.9294 42.4957 29.8596 42.6048 29.7667C42.7139 29.6738 42.8029 29.5597 42.8666 29.4314C42.9303 29.3031 42.9672 29.1631 42.9752 29.0201C42.9752 28.6745 42.9752 28.3073 42.9752 27.9617H49.4552C49.4552 28.3289 49.4552 28.7177 49.4552 29.0849C49.4403 29.2269 49.4537 29.3704 49.4946 29.5071C49.5354 29.6439 49.603 29.7712 49.6934 29.8816C49.7838 29.9921 49.8952 30.0836 50.0211 30.1507C50.1471 30.2179 50.2851 30.2594 50.4272 30.2729C50.7116 30.2919 50.9926 30.202 51.2132 30.0215C51.4337 29.841 51.5775 29.5834 51.6152 29.3009C51.6152 28.5017 51.7232 27.7025 51.7232 26.8817C51.7273 21.7655 50.153 16.7727 47.2149 12.5842C44.2768 8.3958 40.1181 5.21579 35.306 3.47804C30.494 1.74029 25.263 1.52943 20.3268 2.87421C15.3905 4.21899 10.9893 7.05394 7.72359 10.9923C4.4579 14.9306 2.48676 19.7806 2.07908 24.8805C1.67139 29.9804 2.84702 35.0819 5.44558 39.4891C8.04414 43.8962 11.9391 47.3943 16.599 49.5062C21.259 51.6181 26.457 52.2409 31.484 51.2897C31.7704 51.2897 32.0451 51.1759 32.2477 50.9734C32.4502 50.7708 32.564 50.4961 32.564 50.2097C32.564 49.9233 32.4502 49.6486 32.2477 49.446C32.0451 49.2435 31.7704 49.1297 31.484 49.1297L31.376 49.1729ZM25.6952 48.8705C21.9371 46.7784 18.7769 43.7594 16.5152 40.1009C19.507 39.2716 22.5912 38.8217 25.6952 38.7617V48.8705ZM25.6952 36.6017C22.2191 36.7078 18.7709 37.2595 15.4352 38.2433C13.807 35.0499 12.8861 31.5431 12.7352 27.9617H25.6952V36.6017ZM4.09521 27.9617H10.5752C10.7343 31.7125 11.6684 35.3896 13.3184 38.7617C11.7879 39.3049 10.2944 39.9471 8.84721 40.6841C5.98603 37.0366 4.32585 32.5918 4.09521 27.9617ZM8.95521 12.8417C10.408 13.5667 11.9008 14.2085 13.4264 14.7641C11.7081 18.201 10.7364 21.9626 10.5752 25.8017H4.09521C4.31076 21.0779 6.01152 16.5425 8.95521 12.8417ZM27.8552 4.89291C31.6133 6.98503 34.7735 10.004 37.0352 13.6625C34.0426 14.4881 30.9589 14.9379 27.8552 15.0017V4.89291ZM25.6952 15.0017C22.6105 14.8949 19.55 14.4163 16.58 13.5761C18.8523 9.98264 21.9853 7.01294 25.6952 4.93611V15.0017ZM25.6952 17.1617V25.8017H12.7352C12.8973 22.2004 13.8407 18.6774 15.5 15.4769C18.8106 16.4798 22.238 17.0462 25.6952 17.1617ZM27.8552 17.1617C31.3213 17.0926 34.7633 16.5697 38.0936 15.6065C39.718 18.7717 40.646 22.248 40.8152 25.8017H27.8552V17.1617ZM49.4552 25.8017H42.9752C42.7977 22.046 41.8415 18.3682 40.1672 15.0017C41.7136 14.4618 43.2281 13.8344 44.7032 13.1225C47.5573 16.7575 49.2172 21.1863 49.4552 25.8017ZM43.2344 11.3297C41.9076 11.9704 40.5445 12.533 39.152 13.0145C37.2436 9.76141 34.6758 6.94347 31.6136 4.74171C36.0671 5.70466 40.121 8.00288 43.2344 11.3297ZM21.9368 4.84971C18.9408 6.98568 16.4063 9.70385 14.4848 12.8417C13.1008 12.3565 11.745 11.794 10.424 11.1569C13.5388 7.92187 17.5469 5.68843 21.9368 4.74171V4.84971ZM10.3376 42.4553C11.6528 41.8053 13.0093 41.2425 14.3984 40.7705C16.3199 44.008 18.8856 46.8164 21.9368 49.0217C17.4971 48.0517 13.454 45.7629 10.3376 42.4553Z"
+              fill="#FF7900" />
+            <path
+              d="M42.1194 32.4C40.197 32.4 38.3177 32.9701 36.7193 34.0381C35.1208 35.1062 33.875 36.6242 33.1393 38.4003C32.4036 40.1764 32.2111 42.1308 32.5862 44.0163C32.9612 45.9018 33.887 47.6337 35.2463 48.9931C36.6057 50.3525 38.3376 51.2782 40.2231 51.6533C42.1086 52.0283 44.063 51.8358 45.8391 51.1001C47.6152 50.3645 49.1333 49.1186 50.2013 47.5202C51.2694 45.9217 51.8394 44.0425 51.8394 42.12C51.8337 39.5439 50.8078 37.0749 48.9862 35.2533C47.1646 33.4316 44.6956 32.4057 42.1194 32.4ZM42.1194 49.68C40.6242 49.68 39.1625 49.2366 37.9193 48.4059C36.6761 47.5752 35.7071 46.3945 35.1349 45.0131C34.5627 43.6317 34.413 42.1116 34.7047 40.6451C34.9964 39.1786 35.7164 37.8316 36.7737 36.7743C37.831 35.717 39.178 34.997 40.6445 34.7053C42.111 34.4136 43.6311 34.5633 45.0125 35.1355C46.3939 35.7077 47.5746 36.6767 48.4053 37.9199C49.236 39.1631 49.6794 40.6248 49.6794 42.12C49.6794 44.1251 48.8829 46.048 47.4651 47.4658C46.0474 48.8835 44.1245 49.68 42.1194 49.68Z"
+              fill="#FF7900" />
+            <path
+              d="M46.9152 43.308L43.2 41.4504V37.8C43.2 37.5135 43.0863 37.2388 42.8837 37.0363C42.6812 36.8338 42.4065 36.72 42.12 36.72C41.8336 36.72 41.5589 36.8338 41.3564 37.0363C41.1538 37.2388 41.04 37.5135 41.04 37.8V42.12C41.0421 42.3219 41.0996 42.5193 41.2063 42.6907C41.3129 42.8621 41.4646 43.0009 41.6448 43.092L45.9648 45.252C46.1139 45.321 46.2758 45.3578 46.44 45.36C46.6849 45.361 46.9228 45.2788 47.1148 45.1268C47.3068 44.9749 47.4414 44.7622 47.4967 44.5236C47.5519 44.2851 47.5244 44.0349 47.4188 43.814C47.3132 43.5931 47.1356 43.4147 46.9152 43.308Z"
+              fill="#FF7900" />
+          </svg>
+        </div>
+      </div>
+      <div class="container cBot">
+        <h3>Lista de voôs</h3>
+        <ul class="listaVoos list-group list-group-flush">
+
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="avioes">
+    <div class="cardContainer">
+      <div class="container">
+        <div class="bloco">
+          <svg xmlns="http://www.w3.org/2000/svg" width="55" height="48" viewBox="0 0 55 48" fill="none">
+            <g clip-path="url(#clip0_222_84)">
+              <path d="M50.5832 22.992H41.7832V16.752H43.2509V21.8296H50.2688L50.5832 22.992Z" fill="#FF7900" />
+              <path d="M34.8148 19.632H30.9648V22.992H34.8148V19.632Z" fill="#FF7900" />
+              <path d="M27.6654 19.632H23.8154V22.992H27.6654V19.632Z" fill="#FF7900" />
+              <path d="M20.515 19.632H16.665V22.992H20.515V19.632Z" fill="#FF7900" />
+              <path d="M12.8148 19.632H8.96484V22.992H12.8148V19.632Z" fill="#FF7900" />
+              <path
+                d="M19.5525 29.6928H9.581L2.0625 24.6528V9.3216C2.06733 9.0455 2.16301 8.77644 2.33815 8.54647C2.51329 8.3165 2.7605 8.13533 3.05032 8.02454C3.34014 7.91376 3.66035 7.87803 3.97278 7.92162C4.28522 7.96521 4.5767 8.08628 4.8125 8.2704L13.7005 15.4224L13.3485 15.7968L12.958 16.1376L4.0865 8.976C4.00831 8.91437 3.91147 8.87364 3.80752 8.85865C3.70357 8.84366 3.59687 8.85505 3.50012 8.89145C3.40336 8.92786 3.32063 8.98775 3.26175 9.06401C3.20287 9.14026 3.17033 9.22967 3.168 9.3216V24.1776L9.955 28.7328H19.5525V29.6928Z"
+                fill="#FF7900" />
+              <path
+                d="M49.0488 29.6928H31.3773L32 28.5H49C49.6786 28.4992 50.4451 28.3409 51 28C51.5549 27.6591 51.7703 27.0573 52 26.5C52.2297 25.9427 52.1789 25.5713 52 25C51.8211 24.4287 51.0225 23.8779 50.5 23.5L40.5 16.5H2.6123V15.2928H41.3708L51.8593 22.9008C52.5545 23.4056 53.0545 24.0849 53.2915 24.8465C53.5285 25.6081 53.4908 26.4149 53.1837 27.1571C52.8766 27.8994 52.3148 28.541 51.575 28.9947C50.8351 29.4485 49.9531 29.6922 49.0488 29.6928Z"
+                fill="#FF7900" />
+              <path
+                d="M19.6896 40.1136C18.8635 40.1155 18.0519 39.924 17.3393 39.5591C16.6268 39.1941 16.0394 38.6692 15.6384 38.0388C15.2374 37.4084 15.0374 36.6957 15.0592 35.975C15.0811 35.2542 15.324 34.5518 15.7626 33.9408L21.4056 26.0304H35.2271L23.9961 38.3088C23.48 38.8729 22.8247 39.3281 22.0791 39.6406C21.3335 39.953 20.5168 40.1147 19.6896 40.1136ZM21.9996 26.9904L16.6976 34.4496C16.3416 34.9321 16.1508 35.4933 16.1476 36.0672C16.1491 36.8845 16.5214 37.6681 17.1831 38.2465C17.8448 38.8249 18.7421 39.1511 19.6786 39.1536C20.3396 39.1547 20.9924 39.0258 21.5884 38.7765C22.1845 38.5272 22.7085 38.1639 23.1216 37.7136L32.9446 26.9904H21.9996Z"
+                fill="#FF7900" />
+              <path d="M12.5402 37.8719H3.74023V38.8319H12.5402V37.8719Z" fill="#FF7900" />
+              <path d="M12.54 33.072H1.54004V34.032H12.54V33.072Z" fill="#FF7900" />
+            </g>
+            <defs>
+              <clipPath id="clip0_222_84">
+                <rect width="55" height="48" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+      </div>
+      <div class="container cBot">
+        <h3>Lista de aviões</h3>
+        <ul class="listaAvioes list-group list-group-flush">
+
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="voos">
+    <div class="cardContainer">
+      <div class="container">
+        <div class="bloco">
+          <img src="/assets/world-plane.svg">
+        </div>
+      </div>
+      <div class="container cBot">
+        <h3>Lista de combinações <button type="button" class="btn btn-primary btn-sm" onclick="gerarCombinacoes()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+              <path
+                d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z" />
+              <path fill-rule="evenodd"
+                d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z" />
+            </svg></button></h3>
+
+        <ul class="listaComb list-group list-group-flush">
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="tempo">
+    <div class="cardContainer">
+      <div class="container">
+        <div class="bloco">
+          <img src="/assets/plane-clock.svg">
+        </div>
+      </div>
+      <div class="container cBot">
+        <h3>Relatório de voôs</h3>
+        <ul class="listaRel list-group list-group-flush">
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-3 my-4">
+
+    <p class="text-center text-muted">© 2023 Geogin Estágio - by Kaio Resende Silva</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

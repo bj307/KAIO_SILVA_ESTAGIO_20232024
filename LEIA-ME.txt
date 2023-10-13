@@ -1,0 +1,25 @@
+12 de Outubro de 2023
+Kaio Resende Silva
+
+O sistema foi desenvolvido utilizando HTML e Javascript.
+
+Instruções de uso:
+
+Para executar basta abrir o arquivo index.html no navegador;
+
+Para utilizar a aplicação é necessário fazer upload de 2 arquivos .txt seguindo os modelos abaixo:
+
+Para Lista de Voos o modelo deve ser:
+Cidade X Cidade;minutos
+Exemplo:
+Rio de Janeiro X São Paulo;50
+
+Para Lista de Aviões o modelo deve ser:
+NomeDoAvião
+Exemplo:
+AER001-AIRBUS
+
+Para gerar as combinações, basta clicar no botão ao lado do card de exibição das combinações, 
+a cada clique é gerado novas combinações e exibido o relatório das combinações.
+
+Os arquivos ListaDeAvioes.txt e ListaDeVoos.txt possuem alguns exemplos para teste.
